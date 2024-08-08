@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    overflow: hidden;
+}
+
+button {
+    width: 350px;
+    height: 30px;
+    margin: 20px;
+    border: none;
+    background: #000;
+    color: #fff;
+    &:hover {
+        background: #151515;
+    }
+}
+
+.modal {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.blur {
+    transform:  scale(0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #3333337a;
+}
+
+.x {
+    width: 100%;
+    text-align: right;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.form {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    gap: 5px;
+}
+
+input {
+    width: 95%;
+    height: 30px;
+    background: #DADADA;
+    border: none; 
+    outline: none;
+    padding: 0 5px;
+    margin: 5px 0;
+    border: 1px solid #3333334d;
+
+}
+
+input[type = submit] {
+    background: #0094FF;
+    color: #fff;
+    border: none;
+    &:hover {
+        background: #0095ffec;
+    }
+}
+
+.burgerMenu {
+    width: 35%;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: right;
+    transition: 1s ease;
+    position: absolute;
+    top: 0;
+    right: -100%;
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+li {
+    transition: .15s;
+    cursor: pointer;
+    margin: 5px 0;
+    &:hover {
+        color: #999;
+    }
+}
+
+.fa-solid {
+    cursor: pointer;
+    &:hover {
+        color: #999;
+    }
+}
+
+.fa-bars {
+    margin: 20px;
+    &:hover {
+        color: #333;
+    }
+}
