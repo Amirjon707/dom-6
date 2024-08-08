@@ -33,11 +33,12 @@ button {
     left: 50%;
     width: 400px;
     height: 300px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
     flex-direction: column;
     align-items: center;
     padding: 10px;
     background-color: #fff;
+    transition: .3s ease;
 }
 
 .blur {
